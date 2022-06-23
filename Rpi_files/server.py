@@ -1,7 +1,7 @@
 import socket
 import os
 
-HOST = socket.gethostbyname(socket.gethostname())
+HOST = str(os.system('hostname -I'))
 
 print(HOST)
 PORT = 17171
